@@ -282,6 +282,18 @@ case 'C':
                         obj2.insert(index,obj1);
                         break;
 
+                case 'F':
+                        obj2.file();
+                        break;
+
+                case 'L':
+                        obj2.load();
+                        break;
+
+                }
+                cout << " Press Y/y to continue :"<< endl;
+                cin >>z;
+        } while(z=='Y' || z== 'y');
 
     return 0;
-}
+} // End of main function
