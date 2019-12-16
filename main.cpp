@@ -114,6 +114,15 @@ public:
                 } // End of if statement
         }// End of for loop
 }   // End of display function
+	void counter() {
+		int count = 0;
+		for (int x = 0; x < 50; x++) {
+			if (lists[x].getnumber() != "\0") {
+				count++;
+			}
+		} // End of for loop
+		cout << "Number of contacts in program are :" << count << endl;
+	}   // End of counter function
 
 
 };
