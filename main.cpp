@@ -260,6 +260,28 @@ case 'R':
                 case 'D':
                         obj2.display();
                         break;
+case 'C':
+                        obj2.counter();
+                        break;
+
+                case 'I':
+                        cout << "Enter name of person :"<< endl;
+                        cin >> namee;
+                        cout << "Enter number of person :" << endl;
+                        cin >> num;
+                        cout << "Enter city of person :" << endl;
+                        cin >> cit;
+                        cout << "Enter email of person :" << endl;
+                        cin >> emai;
+                        cout << "Enter index at which you want to insert contact :" << endl;
+                        cin >> index;
+                        obj1.setname(namee);
+                        obj1.setnumber(num);
+                        obj1.setcity(cit);
+                        obj1.setemail(emai);
+                        obj2.insert(index,obj1);
+                        break;
+
 
     return 0;
 }
