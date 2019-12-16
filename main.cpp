@@ -214,5 +214,17 @@ int main()
     Contact obj1;
     Contacts obj2;
 
+    do {
+
+                cout << "Press A to add contact :" << endl;
+                cout << "Press R to remove contact :" << endl;
+                cout << "Press S to search contact :" << endl;
+                cout << "Press D to display all contacts :" << endl;
+                cout << "Press C to see how many contacts exist :" << endl;
+                cout << "Press I to insert contact without replacing :" << endl;
+                cout << "Press F to save contacts to file :" << endl;
+                cout << "Press L to load contacts from file :" << endl;
+                cin >> x;
+
     return 0;
 }
