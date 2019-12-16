@@ -31,6 +31,14 @@ public:
 };
 int main()
 {
+ char x,z;
+        int index;
+        string num;
+        string namee;
+        string emai;
+        string cit;
+        Contact obj1;
+        Contacts obj2;
 
     return 0;
 }
