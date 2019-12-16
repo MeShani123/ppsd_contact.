@@ -153,6 +153,30 @@ void insert(int index, Contact obj1){
         }
 }    // End of insert function
 
+void file(){
+        ofstream zeeshan;
+        // Contact oobject;
+        string num;
+        string nam,ema,cit;
+        zeeshan.open("shani.txt",ios::app);
+        for(int x=0; x<50; x++) {
+                if(lists[x].getnumber()=="\0") {
+                        break;
+                }
+                // if(lists[x].getnumber())
+                nam=lists[x].getname();
+                num=lists[x].getnumber();
+                cit=lists[x].getcity();
+                ema=lists[x].getemail();
+                zeeshan <<  nam << endl;
+                zeeshan <<   num << endl;
+                zeeshan <<  cit << endl;
+                zeeshan <<  ema << endl;
+
+        }// End of for loop
+        zeeshan.close();
+}    // End of file class
+
 
 };
 int main()
