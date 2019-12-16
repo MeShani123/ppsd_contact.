@@ -59,20 +59,13 @@ public:
     {
         return city;
     }
-    void display()
-    {
-        for(int x=0; x<50; x++)
-        {
-            if(lists[x].getname()!="\0")
-            {
-                cout << "Name of person is :" << lists[x].getname() << endl;
-                cout << "Number of person is :" << lists[x].getnumber() << endl;
-                cout << "Email of person is :" << lists[x].getemail() << endl;
-                cout << "City of person is :" << lists[x].getcity() << endl;
-                cout << endl << endl;
-            } // End of if statement
-        }// End of for loop
-    }   // End of display function
+	void display(){
+        cout << "Name of person is "<< name << endl;
+        cout << "nameeNumber of person is "<< number << endl;
+        cout << "Email of person is " << Email << endl;
+        cout << "Number of person is "<< number << endl;
+} // End of display function
+
 };
 class Contacts
 {
@@ -110,6 +103,19 @@ public:
             }
         }// End of for loop
     }    // End of search function
+    void display(){
+        for(int x=0; x<50; x++) {
+                if(lists[x].getname()!="\0") {
+                        cout << "Name of person is :" << lists[x].getname() << endl;
+                        cout << "Number of person is :" << lists[x].getnumber() << endl;
+                        cout << "Email of person is :" << lists[x].getemail() << endl;
+                        cout << "City of person is :" << lists[x].getcity() << endl;
+                        cout << endl << endl;
+                } // End of if statement
+        }// End of for loop
+}   // End of display function
+
+
 };
 int main()
 {
