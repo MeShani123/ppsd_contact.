@@ -27,7 +27,30 @@ public:
         this->city=city;
     }///Parameterized Constructor End
 
-
+void setname(string name){
+        this->name=name;
+}
+string getname(){
+        return name;
+}
+void setemail(string Email){
+        this->Email=Email;
+}
+string getemail(){
+        return Email;
+}
+void setnumber(string number){
+        this->number= number;
+}
+string getnumber(){
+        return number;
+}
+void  setcity(string city){
+        this->city=city;
+}
+string getcity(){
+        return city;
+}
 };
 int main()
 {
