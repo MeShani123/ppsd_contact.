@@ -51,6 +51,17 @@ void  setcity(string city){
 string getcity(){
         return city;
 }
+void display(){
+        for(int x=0; x<50; x++) {
+                if(lists[x].getname()!="\0") {
+                        cout << "Name of person is :" << lists[x].getname() << endl;
+                        cout << "Number of person is :" << lists[x].getnumber() << endl;
+                        cout << "Email of person is :" << lists[x].getemail() << endl;
+                        cout << "City of person is :" << lists[x].getcity() << endl;
+                        cout << endl << endl;
+                } // End of if statement
+        }// End of for loop
+}   // End of display function
 };
 int main()
 {
