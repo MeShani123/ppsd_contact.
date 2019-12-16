@@ -123,6 +123,9 @@ public:
 		} // End of for loop
 		cout << "Number of contacts in program are :" << count << endl;
 	}   // End of counter function
+	void remove(int x, Contact obj1) {
+		lists[x] = obj1;
+	}    // End of delete function
 
 
 };
