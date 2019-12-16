@@ -63,6 +63,20 @@ void display(){
         }// End of for loop
 }   // End of display function
 };
+class Contacts {
+public:
+Contact lists[50];
+
+void add(Contact obj1){
+        for (int x=0; x<50; x++) {
+                if(lists[x].getnumber()=="\0") {
+                        lists[x]=obj1;
+                        cout << " Contact have been created at "<< x << " index"<< endl;
+                        break;
+                } // End of if statement
+        } // End of for loop
+}    // End of add function
+};
 int main()
 {
  char x,z;
