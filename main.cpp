@@ -226,5 +226,22 @@ int main()
                 cout << "Press L to load contacts from file :" << endl;
                 cin >> x;
 
+switch (x) {
+                case 'A':
+                        cout << "Enter name of person :"<< endl;
+                        cin >> namee;
+                        cout << "Enter number of person :" << endl;
+                        cin >> num;
+                        cout << "Enter city of person :" << endl;
+                        cin >> cit;
+                        cout << "Enter email of person :" << endl;
+                        cin >> emai;
+                        obj1.setname(namee);
+                        obj1.setnumber(num);
+                        obj1.setcity(cit);
+                        obj1.setemail(emai);
+                        obj2.add(obj1);
+                        break;
+
     return 0;
 }
