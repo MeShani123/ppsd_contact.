@@ -127,6 +127,32 @@ public:
 		lists[x] = obj1;
 	}    // End of delete function
 
+void insert(int index, Contact obj1){
+        string num;
+        string nam,cit,ema;
+        Contact object;
+        if(lists[index].getnumber()!="\0") {
+                num=lists[index].getnumber();
+                nam=lists[index].getname();
+                cit=lists[index].getcity();
+                ema=lists[index].getemail();
+                object.setname(nam);
+                object.setnumber(num);
+                object.setcity(cit);
+                object.setemail(ema);
+                for(int x=0; x<50; x++) {
+                        if(lists[x].getnumber()=="\0") {
+                                lists[x]=object;
+                                lists[index]=obj1;
+                                break;
+                        } // End of if statement
+                } // End of for loop
+        } // End of if statement
+        else {
+                lists[index]=obj1;
+        }
+}    // End of insert function
+
 
 };
 int main()
