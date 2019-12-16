@@ -176,6 +176,30 @@ void file(){
         }// End of for loop
         zeeshan.close();
 }    // End of file class
+void load(){
+        Contact zee;
+        string x;
+        string nam,ema,cit,num;
+        ifstream zeeshan;
+        zeeshan.open("shani.txt");
+        while(zeeshan.eof()==0) {
+                getline(zeeshan,x);
+                zee.setname(x);
+                getline(zeeshan,x);
+                zee.setnumber(x);
+                getline(zeeshan,x);
+                zee.setcity(x);
+                getline(zeeshan,x);
+                zee.setemail(x);
+                for(int x=0; x<50; x++) {
+                        if(lists[x].getnumber()=="\0") {
+                                lists[x]=zee;
+                                break;
+                        } // End of if statment
+                } // End of for loop
+        } // End of while loop
+}    // End of load function
+
 
 
 };
