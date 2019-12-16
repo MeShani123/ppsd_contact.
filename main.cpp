@@ -251,7 +251,15 @@ case 'R':
                         obj1.setemail("\0");
                         obj2.remove(index,obj1);
                         break;
+ case 'S':
+                        cout << "Enter name of contact you want to search :" << endl;
+                        cin >> namee;
+                        obj2.search(namee);
+                        break;
 
+                case 'D':
+                        obj2.display();
+                        break;
 
     return 0;
 }
