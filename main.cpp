@@ -242,6 +242,16 @@ switch (x) {
                         obj1.setemail(emai);
                         obj2.add(obj1);
                         break;
+case 'R':
+                        cout << "Enter Index of contact you want to remove :"<< endl;
+                        cin >> index;
+                        obj1.setname("\0");
+                        obj1.setnumber("\0");
+                        obj1.setcity("\0");
+                        obj1.setemail("\0");
+                        obj2.remove(index,obj1);
+                        break;
+
 
     return 0;
 }
